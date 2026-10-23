@@ -10,6 +10,7 @@ function useObserver(ref, rootMargin = "0px", threshold = 0) {
 
         // Fallback for browsers without IntersectionObserver
         if (typeof IntersectionObserver === "undefined") {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setVisible(true);
             return;
         }
