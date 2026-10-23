@@ -1,0 +1,38 @@
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export function useGsapScroll(containerRef) {
+    useEffect(() => {
+        const container = containerRef.current;
+
+        if (!container) return;
+
+        const ctx = gsap.context(() => {
+            gsap.utils.toArray("[data-reveal]").forEach((element) => {
+                gsap.fromTo(
+                    element,
+                    {
+                        autoAlpha: 0,
+                        y: 28,
+                    },
+                    {
+                        autoAlpha: 1,
+                        y: 0,
+                        duration: 0.7,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: element,
+                            start: "top 88%",
+                            toggleActions: "play none none reverse",
+                        },
+                    },
+                );
+            });
+        }, container);
+
+        return () => ctx.revert();
+    }, [containerRef]);
+}
