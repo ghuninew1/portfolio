@@ -4,7 +4,7 @@ import { Github } from "../../utils/github";
 
 export default function Contact() {
     return (
-        <section id="contact" className="scroll-mt-24 px-5 py-20 sm:px-8 lg:px-12 lg:py-28 section animate-fadeInUp">
+        <section id="contact" className="scroll-mt-24 px-5 py-20 sm:px-8 lg:px-12 lg:py-28 mt-10">
             <div className="mx-auto max-w-7xl">
                 <div className="relative overflow-hidden rounded-3xl apple-glass p-7 sm:p-10 lg:p-14 shadow-2xl">
                     <div

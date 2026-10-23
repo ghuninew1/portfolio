@@ -66,7 +66,7 @@ const AppShell = ({ children }) => {
                 onMobileClose={() => setIsMobileNavOpen(false)}
             />
 
-            <main id="main-content" className="min-w-0">
+            <main id="main-content" className="min-w-0 min-h-0 flex-1 overflow-hidden">
                 {children}
             </main>
 

@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Portfolio",
-  "short_name": "Portfolio",
-  "description": "Portfolio of GhuniNew",
+  "name": "IssueDesk - IT Support",
+  "short_name": "IssueDesk",
+  "description": "ระบบแจ้งปัญหาและติดตามสถานะงาน IT",
   "lang": "th",
   "start_url": "/",
   "scope": "/",

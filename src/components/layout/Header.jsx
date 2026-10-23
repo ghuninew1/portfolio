@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef } from "react";
-import { Code2, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cx } from "../../utils/cx";
 import ThemeToggle from "../../theme/ThemeToggle";
 import { navigation } from "../../data/portfolioData";
 import { Link } from "react-router-dom";
 import { useActiveSection } from "../../hooks/useActiveSection";
 import { Github } from "../../utils/github";
+import Logo from "../../assets/logo.avif";
+import LogoFull from "../../assets/GhuniNew_full_color.avif";
 
 const Header = () => {
     const activeSection = useActiveSection();
@@ -113,16 +115,16 @@ const Header = () => {
                 >
                     <span
                         className={cx(
-                            "flex size-9 items-center justify-center rounded-xl",
-                            "apple-glass-subtle text-violet-500 dark:text-violet-400",
-                            "transition-all duration-300 group-hover:scale-105 group-hover:border-violet-400/40",
+                            "flex size-9 items-center justify-center rounded-xl md:hidden",
+                            // "apple-glass-subtle text-violet-500 dark:text-violet-400",
+                            // "transition-all duration-300 group-hover:scale-105 group-hover:border-violet-400/40",
                         )}
                     >
-                        <Code2 size={20} aria-hidden="true" />
+                        <img src={Logo} alt="GhuniNew" className="w-full"/>
                     </span>
 
-                    <span className="text-sm font-semibold tracking-tight">
-                        Ghuni<span className="text-violet-500 dark:text-violet-400">New</span>
+                    <span className="text-sm font-semibold tracking-tight items-center hidden md:flex">
+                        <img src={LogoFull} alt="GhuniNew"  height={20} className="w-full h-9 mr-2" />
                     </span>
                 </Link>
 

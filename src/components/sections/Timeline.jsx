@@ -3,7 +3,7 @@ import { timeline } from "../../data/portfolioData";
 
 export default function Timeline() {
     return (
-        <section id="timeline" className="scroll-mt-24 px-5 py-20 sm:px-8 lg:px-12 lg:py-28 section animate-fadeInUp">
+        <section id="timeline" className="scroll-mt-24 px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
             <div className="mx-auto max-w-7xl">
                 <div className="mb-12 max-w-2xl">
                     <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-indigo-400">My Journey</p>
