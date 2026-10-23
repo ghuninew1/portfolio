@@ -9,22 +9,86 @@ export const navigation = [
     { label: "Contact", href: "#contact", icon: Mail, labelTh: "ติดต่อ"},
 ];
 
+
 export const personalInfo = {
     name: "Ghuninew",
-    displayName: "Ghuninew",
+    displayName: "GhuniNew",
     role: "Web Developer & IT Technician",
     roleTh: "นักพัฒนาเว็บไซต์และช่างเทคนิค IT",
-    headline: "Building useful things with code and technology.",
-    headlineTh: "สร้างสิ่งที่ใช้งานได้จริง ด้วยโค้ดและเทคโนโลยี",
-    bio: "I build practical web applications and help keep IT systems running smoothly.",
-    bioTh: "ผมพัฒนาเว็บแอปพลิเคชันที่ใช้งานได้จริง ควบคู่กับการดูแลระบบ IT และแก้ไขปัญหาทางเทคนิค",
+
+    headline: "Building practical solutions with code and technology.",
+    headlineTh: "สร้างโซลูชันที่ใช้งานได้จริง ด้วยโค้ดและเทคโนโลยี",
+
+    bio: "I develop practical web applications, optimize user experiences, and maintain IT systems and network infrastructure.",
+    bioTh: "ผมพัฒนาเว็บแอปพลิเคชันที่ใช้งานได้จริง ปรับปรุงประสบการณ์ผู้ใช้ และดูแลระบบ IT รวมถึงโครงสร้างพื้นฐานเครือข่าย",
+
     aboutText:
-        "ผมสนใจเทคโนโลยี การพัฒนาเว็บไซต์ และการแก้ปัญหาเชิงเทคนิค มีประสบการณ์ทำงานด้าน IT Support พร้อมเรียนรู้และพัฒนา Web Application ที่ช่วยให้การทำงานสะดวกและมีประสิทธิภาพมากขึ้น",
+        "ผมทำงานด้าน IT Support และสนใจการพัฒนา Web Application โดยนำประสบการณ์การแก้ไขปัญหาคอมพิวเตอร์ ซอฟต์แวร์ และระบบเครือข่าย มาต่อยอดเป็นเครื่องมือที่ช่วยให้การทำงานมีประสิทธิภาพมากขึ้น ผมให้ความสำคัญกับโค้ดที่ดูแลต่อได้ UI ที่ตอบสนองทุกอุปกรณ์ ประสิทธิภาพของระบบ และการเลือกใช้เทคโนโลยีให้เหมาะกับปัญหาจริง",
+
     quote: "ไม่ใช่แค่ทำงานให้เสร็จ แต่ทำให้ดีขึ้นได้เสมอ",
+
     location: "Thailand",
-    interests: ["Web Development", "IT Support", "Networking", "3D"],
+    email: "aakanun43@gmail.com",
+    facebookUrl: "https://www.facebook.com/ghuninew/",
+    linkedinUrl: "https://www.linkedin.com/in/ghuninew-jonjaras-35485418a/",
+
+    interests: [
+        "Web Development",
+        "IT Support",
+        "Network Infrastructure",
+        "Self-hosted Services",
+        "Performance Optimization",
+        "3D & Blender",
+    ],
+
     githubUrl: "https://github.com/ghuninew1",
 };
+
+
+export const additionalTechStack = [
+    {
+        name: "Docker",
+        category: "Infrastructure",
+        description: "Containerized applications and self-hosted services",
+        color: "from-blue-500/20 to-cyan-500/20",
+    },
+    {
+        name: "QNAP NAS",
+        category: "Storage & Infrastructure",
+        description: "NAS administration, SSH access, and storage services",
+        color: "from-red-500/20 to-orange-500/20",
+    },
+    {
+        name: "MikroTik RouterOS",
+        category: "Networking",
+        description: "Router configuration, dual-WAN routing, and VPN",
+        color: "from-orange-500/20 to-amber-500/20",
+    },
+    {
+        name: "WireGuard",
+        category: "Networking & VPN",
+        description: "VPN connectivity and remote network access",
+        color: "from-emerald-500/20 to-teal-500/20",
+    },
+    {
+        name: "Google Sheets API",
+        category: "Data Integration",
+        description: "Integrating spreadsheet data into React applications",
+        color: "from-green-500/20 to-emerald-500/20",
+    },
+    {
+        name: "Web Performance",
+        category: "Optimization",
+        description: "Reducing unnecessary rendering and improving loading performance",
+        color: "from-violet-500/20 to-purple-500/20",
+    },
+    {
+        name: "Web Workers",
+        category: "Browser APIs",
+        description: "Off-main-thread processing for browser-based tools",
+        color: "from-yellow-500/20 to-amber-500/20",
+    },
+];
 
 export const techStack = [
     {
@@ -87,92 +151,155 @@ export const techStack = [
         description: "Hardware, software and user support",
         color: "from-blue-600/20 to-cyan-600/20",
     },
+    ...additionalTechStack,
 ];
+
 
 export const projects = [
     {
         id: "issuedesk",
         title: "IssueDesk",
-        subtitle: "Office IT Issue Management",
+        subtitle: "Office IT Issue & Asset Management",
         category: "Web Application",
         status: "In Development",
+
         description:
-            "เว็บแอปพลิเคชันสำหรับแจ้งปัญหา IT ภายในองค์กร ติดตามสถานะงาน และช่วยให้การจัดการปัญหาเป็นระบบมากขึ้น",
-        descriptionEn: "An office IT issue reporting and tracking application designed to organize support requests.",
+            "เว็บแอปพลิเคชันสำหรับแจ้งและติดตามปัญหา IT ภายในองค์กร พร้อมพัฒนาระบบจัดการข้อมูลอุปกรณ์และเครื่องมือจัดการรูปภาพผ่าน Storage API",
+
+        descriptionEn:
+            "An office IT management application for issue tracking, asset data, and image storage workflows.",
+
         highlights: [
-            "Issue reporting and tracking",
-            "React-based responsive interface",
-            "Cloudflare Pages and D1 integration",
+            "IT issue reporting and tracking",
+            "Asset data integration with Google Sheets",
+            "Custom Storage API for image upload and management",
+            "Responsive UI built with React and Tailwind CSS",
+            "Performance optimization for image-heavy interfaces",
+            "Cloudflare Pages deployment workflow",
         ],
-        tags: ["React", "Tailwind CSS", "Cloudflare Pages", "D1"],
+
+        tags: [
+            "React",
+            "React Router",
+            "Tailwind CSS v4",
+            "Vite",
+            "Cloudflare Pages",
+            "Cloudflare D1",
+            "Google Sheets API",
+            "Storage API",
+        ],
+
         githubUrl: "https://github.com/ghuninew1",
         demoUrl: null,
         featured: true,
     },
+
     {
         id: "react-image-converter",
         title: "React Image Converter",
-        subtitle: "Browser-based Image Conversion",
+        subtitle: "Client-side Image Processing Tool",
         category: "Web Tool",
         status: "Built",
+
         description:
-            "เครื่องมือแปลงและจัดการรูปภาพบนเบราว์เซอร์ รองรับการแปลงไฟล์ภาพและรวมไฟล์ผลลัพธ์เป็น ZIP โดยประมวลผลฝั่ง Client",
-        descriptionEn: "A client-side image conversion tool with multiple image formats and ZIP export.",
-        highlights: ["Client-side image processing", "AVIF conversion support", "ZIP export for converted files"],
-        tags: ["React", "Vite", "Tailwind CSS", "AVIF", "JSZip"],
+            "เครื่องมือแปลงไฟล์ภาพบนเบราว์เซอร์ รองรับ AVIF และการรวมไฟล์ผลลัพธ์เป็น ZIP โดยประมวลผลฝั่ง Client เพื่อลดการพึ่งพาเซิร์ฟเวอร์",
+
+        descriptionEn:
+            "A browser-based image conversion tool with AVIF support, client-side processing, and ZIP export.",
+
+        highlights: [
+            "Client-side image conversion",
+            "AVIF support with configurable quality",
+            "Web Worker for image processing",
+            "ZIP export using JSZip",
+            "GitHub Pages deployment workflow",
+        ],
+
+        tags: ["React", "Vite", "Tailwind CSS v4", "JavaScript", "Web Workers", "AVIF", "JSZip"],
+
         githubUrl: "https://github.com/ghuninew1/React-Image-Converter",
         demoUrl: null,
         featured: true,
     },
+
     {
         id: "nexora",
         title: "Nexora",
         subtitle: "Private Cloud File Management",
         category: "Web Application",
         status: "Paused",
+
         description:
-            "ต้นแบบเว็บจัดการไฟล์ส่วนตัวที่ได้รับแรงบันดาลใจจาก Nextcloud มีส่วนติดต่อสำหรับเรียกดูและจัดการไฟล์",
+            "ต้นแบบ UI สำหรับจัดการไฟล์ส่วนตัวที่ได้รับแรงบันดาลใจจาก Nextcloud มีระบบนำทาง โฟลเดอร์ การจัดการไฟล์ คิวอัปโหลด และ Drag and Drop",
+
         descriptionEn:
-            "A private-cloud-inspired file management interface with browsing and file organization features.",
+            "A private-cloud-inspired file management interface focused on file organization and upload workflows.",
+
         highlights: [
-            "File browsing interface",
+            "File browsing and breadcrumb navigation",
             "Folder and file management UI",
-            "Upload queue and drag-and-drop workflow",
+            "Upload queue with progress tracking",
+            "Drag-and-drop file workflow",
+            "Responsive layout with theme support",
         ],
-        tags: ["React", "Vite", "Tailwind CSS", "Cloudflare"],
+
+        tags: ["React", "Vite", "Tailwind CSS v4", "Cloudflare Pages", "Wrangler"],
+
         githubUrl: "https://github.com/ghuninew1",
         demoUrl: null,
-        featured: true,
+        featured: false,
     },
 ];
+
+
 
 export const timeline = [
     {
         id: "it-support",
         title: "IT Support & Technical Operations",
         titleTh: "งานดูแลระบบและสนับสนุนด้าน IT",
-        description: "ดูแล แก้ไขปัญหา และสนับสนุนการใช้งานคอมพิวเตอร์ ซอฟต์แวร์ และระบบเครือข่าย",
+        description:
+            "ดูแลและแก้ไขปัญหาคอมพิวเตอร์ ซอฟต์แวร์ อุปกรณ์สำนักงาน และระบบเครือข่าย เพื่อให้ผู้ใช้ทำงานได้อย่างต่อเนื่อง",
         type: "Professional Focus",
     },
     {
+        id: "network-infrastructure",
+        title: "Network & Infrastructure",
+        titleTh: "ระบบเครือข่ายและโครงสร้างพื้นฐาน",
+        description: "ศึกษาทดลองและดูแลระบบเครือข่าย การเชื่อมต่อ VPN อุปกรณ์ Router และบริการจัดเก็บข้อมูลภายในระบบ",
+        type: "Technical Operations",
+    },
+    {
         id: "web-development",
-        title: "Web Development",
-        titleTh: "พัฒนาเว็บแอปพลิเคชัน",
-        description: "พัฒนาโปรเจกต์ด้วย React และ Vite พร้อมออกแบบ UI ที่ตอบสนองต่ออุปกรณ์หลายขนาด",
+        title: "React & Frontend Development",
+        titleTh: "การพัฒนาเว็บไซต์และ Frontend",
+        description:
+            "พัฒนา UI ด้วย React, Vite และ Tailwind CSS โดยเน้น Responsive Design การแยก Component และโค้ดที่ดูแลรักษาต่อได้",
         type: "Development",
     },
     {
-        id: "current-projects",
-        title: "Building Practical Projects",
-        titleTh: "พัฒนาโปรเจกต์ที่ใช้งานได้จริง",
-        description: "สร้างและปรับปรุงโปรเจกต์ที่ผสานการพัฒนาเว็บไซต์เข้ากับประสบการณ์ด้าน IT",
+        id: "practical-applications",
+        title: "Building Practical Applications",
+        titleTh: "สร้างแอปพลิเคชันเพื่อแก้ปัญหาจริง",
+        description:
+            "พัฒนา IssueDesk สำหรับงาน IT ภายในองค์กร และ React Image Converter สำหรับแปลงไฟล์ภาพบนเบราว์เซอร์",
+        type: "Projects",
+    },
+    {
+        id: "continuous-improvement",
+        title: "Continuous Improvement",
+        titleTh: "เรียนรู้และปรับปรุงอย่างต่อเนื่อง",
+        description:
+            "ปรับปรุงประสิทธิภาพเว็บ ลดการโหลดข้อมูลที่ไม่จำเป็น และเลือกเทคโนโลยีให้เหมาะกับข้อจำกัดของแต่ละระบบ",
         type: "Ongoing",
     },
 ];
 
+
 export const contactInfo = {
     github: personalInfo.githubUrl,
-    email: null,
-    linkedin: null,
+    email: personalInfo.email,
+    facebook: personalInfo.facebookUrl,
+    linkedin: personalInfo.linkedinUrl,
     location: personalInfo.location,
 };

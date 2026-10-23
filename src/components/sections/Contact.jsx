@@ -4,13 +4,14 @@ import { Github } from "../../utils/github";
 
 export default function Contact() {
     return (
-        <section id="contact" className="scroll-mt-24 px-5 py-20 sm:px-8 lg:px-12 lg:py-28 mt-10">
+        <section id="contact" className="scroll-mt-24 px-5 py-20 sm:px-8 lg:px-12 lg:py-28 mt-50 mb-50">
             <div className="mx-auto max-w-7xl">
                 <div className="relative overflow-hidden rounded-3xl apple-glass p-7 sm:p-10 lg:p-14 shadow-2xl">
                     <div
                         aria-hidden="true"
                         className="pointer-events-none absolute -right-20 -top-24 size-80 rounded-full bg-indigo-500/15 blur-[100px]"
                     />
+
 
                     <div className="relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
                         <div className="max-w-2xl">
@@ -24,13 +25,17 @@ export default function Contact() {
                                 สนใจพูดคุยเกี่ยวกับการพัฒนาเว็บไซต์ เทคโนโลยี หรือโปรเจกต์ต่าง ๆ
                                 สามารถติดต่อผ่านช่องทางด้านล่างได้
                             </p>
+                            <p className="mt-5 leading-8 text-muted-foreground">
+                                {personalInfo.role}
+                            </p>
 
                             <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
                                 <div className="flex size-7 items-center justify-center rounded-full apple-glass-subtle">
                                     <MapPin className="size-3.5 text-indigo-500 dark:text-indigo-400" />
                                 </div>
-                                {contactInfo.location}
+                                {personalInfo.location}
                             </div>
+
                         </div>
 
                         <div className="flex flex-wrap gap-3">
@@ -43,6 +48,18 @@ export default function Contact() {
                                 >
                                     <Github className="size-4" />
                                     GitHub
+                                    <ArrowUpRight className="size-4" />
+                                </a>
+                            )}
+
+                            {contactInfo.facebook && (
+                                <a
+                                    href={contactInfo.facebook}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="inline-flex min-h-12 items-center gap-2 rounded-full apple-glass-subtle px-6 py-3 text-sm font-medium text-foreground transition-all duration-200 hover:scale-105 hover:text-indigo-500 dark:hover:text-indigo-400"
+                                >
+                                    Facebook
                                     <ArrowUpRight className="size-4" />
                                 </a>
                             )}

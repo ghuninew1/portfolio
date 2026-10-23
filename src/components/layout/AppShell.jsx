@@ -73,9 +73,9 @@ const AppShell = ({ children }) => {
             <footer className={cx("border-t border-border/50", "px-5 py-6 sm:px-8 lg:px-12")}>
                 <div
                     className={cx(
-                        "mx-auto flex max-w-7xl flex-col gap-3",
+                        "mx-auto flex max-w-7xl flex-col gap-3 items-center",
                         "text-xs text-muted-foreground",
-                        "sm:flex-row sm:items-center sm:justify-between",
+                        "md:flex-row md:items-center md:justify-between justify-center ",
                     )}
                 >
                     <p>© {new Date().getFullYear()} GhuniNew. All rights reserved.</p>
